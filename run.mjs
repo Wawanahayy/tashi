@@ -6,7 +6,7 @@ import nacl from "tweetnacl";
 import fetch from "node-fetch";
 
 
-const SOL_PK_ENV = process.env.SOL_PRIVATE_KEY;
+const SOL_PK_ENV = process.env.SOL_PRIVATE_KEY || "privatekey.txt";
 const REFERRAL = process.env.TASHI_REFERRAL || "";
 
 if (!SOL_PK_ENV) {
